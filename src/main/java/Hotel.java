@@ -30,5 +30,9 @@ public class Hotel {
         room.clearRoom();
     }
 
+    public Booking bookRoom(Room room, int numberOfNights) {
+         Booking booking = new Booking(room, numberOfNights);
+         return booking;
+    }
 
 }

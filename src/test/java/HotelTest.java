@@ -12,6 +12,9 @@ public class HotelTest {
     private Guest guest1;
     private Guest guest2;
 
+    private Booking booking1;
+    private Booking booking2;
+
     private Hotel hotel;
 
 
@@ -49,5 +52,11 @@ public class HotelTest {
         hotel.addGuestToRoom(guest1, room1);
         hotel.checkoutRoom(room1);
         assertEquals(0, room1.checkNumberOfGuestsInRoom());
+    }
+
+    @Test
+    public void checkBookRoom(){
+        Booking booking = hotel.bookRoom(room2, 7);
+        assertEquals(2, booking.roomNumber());
     }
 }

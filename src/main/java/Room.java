@@ -6,7 +6,7 @@ public class Room {
     private int capacity;
     private String type;
     private ArrayList<Guest> roomGuestsCollection;
-    private Guest guest;
+//    private Guest guest;
 
     public Room(int roomNumber, int capacity, String type) {
         this.roomNumber = roomNumber;
